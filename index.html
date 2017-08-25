@@ -1,0 +1,214 @@
+<html>
+
+<head>
+
+<title>Home</title>
+
+</head>
+
+<body>
+
+    <div class="gridContainer">
+
+        <div class="header">
+
+        </div>
+
+        <div class="myName">
+
+            <h1 class="name"> Steven Brew</h1>
+
+        </div>
+
+        <div class="navLinks">
+
+            <a href="https://google.com" class="links">ABOUT</a>
+            <a href="https://google.com" class="links">WORK</a>
+            <a href="https://google.com" class="links">CONTACT</a>
+            <a href="https://google.com" class="links">BLOG</a>
+
+        </div>
+
+        <div class="intro">
+
+            <p class="introText">
+
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                    
+                    <br>
+                    <br>
+
+                    Donec eu libero sit amet quam egestas semper. 
+                Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. 
+
+                    <br>
+                    <br>
+
+                Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. 
+                Donec non enim in turpis pulvinar facilisis.
+            </p>
+
+        </div>
+
+        <div class="image">
+
+            <img src="https://s3.amazonaws.com/cdn.point.io/distribution/Sport+Testing/Rocky.jpg" class="rocky">
+
+        </div>
+
+        <div class="shortResume">
+
+            <p class="resumeList"> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                
+                <br><br>
+                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. 
+
+                <br><br>
+
+                Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+
+            </p>
+
+        </div>
+
+        <div class="line">
+
+            <div class="theLine"></div>
+
+        </div>
+
+        <div class="footer">
+            <a href="https://microshare.io">
+            <img src="https://s3.amazonaws.com/cdn.point.io/distribution/Sport+Testing/microshare.jpg" class="microshare">
+            </a>
+            
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+<style>
+    a:hover{
+        text-decoration: underline; 
+    }
+    .links{
+        text-decoration: none;
+        color:black;
+        font-variant: small-caps;
+        position:relative;
+        left:10%;
+        font-family:serif;
+    }
+.rocky{
+        border-radius:25px;
+        border: 1px #d9d9d9 solid;
+    }
+.microshare{
+    position:relative;
+    top:10px;
+}
+html{
+    background-color:#e6e6e6 ;
+    opacity: .9;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    border: 1px solid black; 
+    height:45em;
+    width: auto;
+    background-color:white;
+}
+.header{
+    grid-column-start:1;
+    grid-column-end:21;
+    grid-row-start:1;
+    grid-row-end:1;
+    background-color:black;
+}
+.myName{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:2;
+    grid-row-end:4;
+}
+.name{
+    font-variant:small-caps;
+    font-size:40px;
+}
+.navLinks{
+    grid-column-start:11;
+    grid-column-end:18;
+    grid-row-start:2;
+    grid-row-end:4;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    line-height: 90px;
+    font-variant: small-caps;
+}
+.intro{
+    grid-column-start:2;
+    grid-column-end:9;
+    grid-row-start:5;
+    grid-row-end:17;
+    background-color:#f2f2f2;
+    border-radius:25px;
+    border: 1px #d9d9d9 solid;
+}
+.image{
+    grid-column-start:11;
+    grid-column-end:16;
+    grid-row-start:5;
+    grid-row-end:17;
+}
+.shortResume{
+    grid-column-start:17;
+    grid-column-end:20;
+    grid-row-start:5;
+    grid-row-end:17;
+    background-color:#f2f2f2;
+    border-radius:25px;
+    border: 1px #d9d9d9 solid;
+}
+.introText{
+    margin-right:5%;
+    margin-left:5%;
+    font-family:monospace;
+    text-align:center;
+    line-height: 1.5;
+}
+.resumeList{
+    margin-right:5%;
+    margin-left:5%;
+    font-family:monospace;
+    text-align:center;
+    line-height: 1.5;
+}
+.footer{
+    grid-column-start:1;
+    grid-column-end:21;
+    grid-row-start:20;
+    grid-row-end:19;
+    
+}
+.line{
+    grid-column-start:2;
+    grid-column-end:20;
+    grid-row-start:19;
+    grid-row-end:19;
+}
+.theLine{
+    height:1px;
+    background-color:grey;
+}
+
+</style>
+
+</html>

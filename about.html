@@ -1,0 +1,181 @@
+<html>
+
+<head>
+
+<title>About me</title>
+
+</head>
+
+<body>
+
+    <div class="gridContainer">
+
+        <div class="header">
+
+        </div>
+
+        <div class="myName">
+
+            <h1 class="name"> Steven Brew</h1>
+
+        </div>
+
+        <div class="navLinks">
+
+            <a href="https://google.com" class="links">ABOUT</a>
+            <a href="https://google.com" class="links">WORK</a>
+            <a href="https://google.com" class="links">CONTACT</a>
+            <a href="https://google.com" class="links">BLOG</a>
+
+        </div>
+
+        <div class="intro">
+
+            
+        </div>
+
+        <div class="image">
+
+            
+
+        </div>
+
+        <div class="shortResume">
+
+
+        </div>
+
+        <div class="line">
+
+            <div class="theLine"></div>
+
+        </div>
+
+        <div class="footer">
+            <a href="https://microshare.io">
+            <img src="https://s3.amazonaws.com/cdn.point.io/distribution/Sport+Testing/microshare.jpg" class="microshare">
+            </a>
+            
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+<style>
+    a:hover{
+        text-decoration: underline; 
+    }
+    .links{
+        text-decoration: none;
+        color:black;
+        font-variant: small-caps;
+        position:relative;
+        left:10%;
+        font-family:serif;
+    }
+.microshare{
+    position:relative;
+    top:10px;
+}
+html{
+    background-color:#e6e6e6 ;
+    opacity: .9;
+}
+.gridContainer{
+    display:grid;
+    grid-template-columns: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    grid-template-rows: 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5% 5%;
+    border: 1px solid black; 
+    height:45em;
+    width: auto;
+    background-color:white;
+}
+.header{
+    grid-column-start:1;
+    grid-column-end:21;
+    grid-row-start:1;
+    grid-row-end:1;
+    background-color:black;
+}
+.myName{
+    grid-column-start:2;
+    grid-column-end:6;
+    grid-row-start:2;
+    grid-row-end:4;
+}
+.name{
+    font-variant:small-caps;
+    font-size:40px;
+}
+.navLinks{
+    grid-column-start:11;
+    grid-column-end:18;
+    grid-row-start:2;
+    grid-row-end:4;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    line-height: 90px;
+    font-variant: small-caps;
+}
+.intro{
+    grid-column-start:2;
+    grid-column-end:9;
+    grid-row-start:5;
+    grid-row-end:17;
+    border-radius:25px;
+    
+}
+.image{
+    grid-column-start:11;
+    grid-column-end:16;
+    grid-row-start:5;
+    grid-row-end:17;
+}
+.shortResume{
+    grid-column-start:17;
+    grid-column-end:20;
+    grid-row-start:5;
+    grid-row-end:17;
+    border-radius:25px;
+    
+}
+.introText{
+    margin-right:5%;
+    margin-left:5%;
+    font-family:monospace;
+    text-align:center;
+    line-height: 1.5;
+}
+.resumeList{
+    margin-right:5%;
+    margin-left:5%;
+    font-family:monospace;
+    text-align:center;
+    line-height: 1.5;
+}
+.footer{
+    grid-column-start:1;
+    grid-column-end:21;
+    grid-row-start:20;
+    grid-row-end:19;
+    
+}
+.line{
+    grid-column-start:2;
+    grid-column-end:20;
+    grid-row-start:19;
+    grid-row-end:19;
+}
+.theLine{
+    height:1px;
+    background-color:grey;
+}
+
+</style>
+
+</html>
